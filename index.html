@@ -10,249 +10,314 @@
     <title>Psi. Ana Carolina</title>
   </head>
   <body>
-    <!-- HEADER ok, css ok -->
-    <header>
-      <div class="logo">
-        <img src="imagens/logo-psi.svg" alt="Logotipo da psicóloga" />
-        <div class="infos">
-          <h1>Psi. Ana Carolina</h1>
-          <p>CRP: 123456789</p>
-        </div>
-      </div>
-      <ul class="botoes">
-        <!-- todo: href dos botões abaixo -->
-        <li><a href="#sobre-mim">Sobre mim</a></li>
-        <li><a href="">Depoimentos</a></li>
-        <li><a href="">Dúvidas</a></li>
-        <li><a href="">Fale comigo</a></li>
-      </ul>
-    </header>
-
-    <!-- HERO ok, css ok -->
-    <section class="hero">
-      <div class="textos">
-        <div class="texto-principal">
-          <p>Às vezes a gente simplesmente</p>
-          <p class="texto-estilizado">cansa</p>
-        </div>
-        <div class="card-psi">
-          <img src="imagens/hero-perfil-psi.webp" alt="Foto de perfil" />
-          <div class="textos-card">
-            <p class="nome">Psi. Ana Carolina</p>
-            <p class="mensagem">Eu te entendo! Vamos conversar?</p>
+    <div id="smooth-wrapper">
+      <div id="smooth-content">
+        <!-- HEADER ok, css ok -->
+        <header>
+          <div class="logo">
+            <img src="imagens/logo-psi.svg" alt="Logotipo da psicóloga" />
+            <div class="infos">
+              <h1>Psi. Ana Carolina</h1>
+              <p>CRP: 123456789</p>
+            </div>
           </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- SECAO1 ok, css ok -->
-    <section class="secao1">
-      <div class="talvez">
-        <h2>talvez você esteja vivendo isso...</h2>
-        <div class="talvez-textos">
-          <p class="talvez-texto1">
-            “Eu me cobro demais, mas nunca sinto que é suficiente.”<br />
-            “Eu sei que estou cansado, mas não consigo parar.”<br />
-            “Eu comparo minha vida com a de todo mundo.”<br />
-            “Eu sinto que estou atrasado na vida.”<br />
-            “Eu me sinto estranho, como se ninguém realmente me entendesse.”<br />
-            “Eu tenho medo de decepcionar as pessoas.”<br />
-          </p>
-          <p class="talvez-texto2">
-            Mas isso pode chegar ao fim. Entender o que está acontecendo dentro
-            de você é o primeiro passo para deixar de viver no automático.
-          </p>
-        </div>
-      </div>
-      <div class="abordagem">
-        <h2>minha abordagem</h2>
-        <div class="abordagem-textos">
-          <p class="abordagem-texto1">
-            Minha abordagem é baseada na psicologia contemporânea, com foco no
-            autoconhecimento e na compreensão dos padrões emocionais e
-            comportamentais. Eu não acredito em respostas prontas. Acredito em
-            processos.<br />
-            Durante os atendimentos, trabalhamos para identificar:<br />
-          </p>
-
-          <ul class="abordagem-texto2">
-            <li>Padrões de pensamento</li>
-            <li>Estratégias de defesa que você desenvolveu</li>
-            <li>Crenças que moldam sua forma de se ver e ver o mundo</li>
+          <ul class="botoes">
+            <!-- todo: href dos botões abaixo -->
+            <li><button id="button-sobre-mim">Sobre mim</button></li>
+            <li><button id="button-depoimentos">Depoimentos</button></li>
+            <li><button id="button-duvidas">Dúvidas</button></li>
+            <li><button id="button-fale-comigo">Fale comigo</button></li>
           </ul>
+        </header>
 
-          <p class="abordagem-texto3">
-            Quando você entende seus próprios mecanismos, começa a ter escolha.
-          </p>
+        <!-- HERO ok, css ok -->
+        <section class="hero">
+          <picture class="bg" data-speed="0.4">
+            <!-- todo: colocar aqui qual imagem vai aparecer como bg quando for no celular -->
+            <source
+              media="(max-width: 600px)"
+              srcset="imagens/hero-bg-mobile.webp"
+            />
+            <img src="imagens/hero-bg.webp" alt="" />
+          </picture>
+          <div class="textos">
+            <div class="texto-principal">
+              <p>Às vezes a gente simplesmente</p>
+              <p class="texto-estilizado">cansa</p>
+            </div>
+            <div class="card-psi">
+              <img src="imagens/hero-perfil-psi.webp" alt="Foto de perfil" />
+              <div class="textos-card">
+                <p class="nome">Psi. Ana Carolina</p>
+                <p class="mensagem">Eu te entendo! Vamos conversar?</p>
+              </div>
+            </div>
+          </div>
+        </section>
 
-          <p class="abordagem-texto4" id="sobre-mim">
-            Eu sou Ana Carolina, psicóloga, apaixonada por entender os processos
-            da mente humana e ajudar jovens adultos a construírem uma relação
-            mais consciente consigo mesmos.
-            Atendo principalmente pessoas entre 18 e 35 anos que lidam com
-            ansiedade, insegurança, pressão social e crises de identidade.
-            Meu objetivo é oferecer um espaço ético, seguro e sem julgamentos.
-          </p>
+        <!-- SECAO1 ok, css ok -->
+        <div class="container-secao1">
+          <section class="secao1">
+            <picture class="bg-secao1" data-speed="0.6">
+              <!-- todo: colocar a url do bg pra mobile -->
+              <source
+                media="(max-width: 600px)"
+                srcset="imagens/secao1-bg-mobile"
+              />
+              <img src="imagens/secao1-bg.webp" alt="" />
+            </picture>
+            <div class="talvez">
+              <h2>talvez você esteja vivendo isso...</h2>
+              <div class="talvez-textos">
+                <p class="talvez-texto1">
+                  “Eu me cobro demais, mas nunca sinto que é suficiente.”<br />
+                  “Eu sei que estou cansado, mas não consigo parar.”<br />
+                  “Eu comparo minha vida com a de todo mundo.”<br />
+                  “Eu sinto que estou atrasado na vida.”<br />
+                  “Eu me sinto estranho, como se ninguém realmente me
+                  entendesse.”<br />
+                  “Eu tenho medo de decepcionar as pessoas.”<br />
+                </p>
+                <p class="talvez-texto2">
+                  Mas isso pode chegar ao fim. Entender o que está acontecendo
+                  dentro de você é o primeiro passo para deixar de viver no
+                  automático.
+                </p>
+              </div>
+            </div>
+            <div class="abordagem">
+              <h2>minha abordagem</h2>
+              <div class="abordagem-textos">
+                <p class="abordagem-texto1">
+                  Minha abordagem é baseada na psicologia contemporânea, com
+                  foco no autoconhecimento e na compreensão dos padrões
+                  emocionais e comportamentais. Eu não acredito em respostas
+                  prontas. Acredito em processos.<br />
+                  Durante os atendimentos, trabalhamos para identificar:<br />
+                </p>
 
-          <!-- todo: link do whatsapp -->
-          <a href="" class="abordagem-botao-whatsapp botao">
-            <img src="imagens/logo-whatsapp.webp" alt="Logo do WhatsApp" />
-            <p>Quero agendar uma consulta</p>
-          </a>
+                <ul class="abordagem-texto2">
+                  <li>Padrões de pensamento</li>
+                  <li>Estratégias de defesa que você desenvolveu</li>
+                  <li>Crenças que moldam sua forma de se ver e ver o mundo</li>
+                </ul>
+
+                <p class="abordagem-texto3">
+                  Quando você entende seus próprios mecanismos, começa a ter
+                  escolha.
+                </p>
+
+                <p class="abordagem-texto4" id="sobre-mim">
+                  Eu sou Ana Carolina, psicóloga, apaixonada por entender os
+                  processos da mente humana e ajudar jovens adultos a
+                  construírem uma relação mais consciente consigo mesmos. Atendo
+                  principalmente pessoas entre 18 e 35 anos que lidam com
+                  ansiedade, insegurança, pressão social e crises de identidade.
+                  Meu objetivo é oferecer um espaço ético, seguro e sem
+                  julgamentos.
+                </p>
+
+                <!-- todo: link do whatsapp -->
+                <a href="" class="abordagem-botao-whatsapp botao">
+                  <img
+                    src="imagens/logo-whatsapp.webp"
+                    alt="Logo do WhatsApp"
+                  />
+                  <p>Quero agendar uma consulta</p>
+                </a>
+              </div>
+            </div>
+          </section>
+        </div>
+
+        <!-- SECAO2 ok, css ok -->
+        <div class="container-secao2">
+          <section class="secao2">
+            <picture class="bg-secao2">
+              <!-- todo: colocar a url do bg pra mobile -->
+              <source
+                media="(max-width: 600px)"
+                srcset="imagens/secao2-bg-mobile"
+              />
+              <img src="imagens/secao2-bg.webp" alt="" />
+            </picture>
+
+            <div id="depoimentos-anonimos" class="depoimentos-anonimos">
+              <div class="depoimentos-anonimos-textos">
+                <h2>depoimentos anônimos</h2>
+                <p class="texto-minusculo">
+                  Todos os depoimentos foram publicados com autorização dos
+                  pacientes. Para garantir confidencialidade e respeito ético,
+                  as identidades foram preservadas.
+                </p>
+              </div>
+
+              <div class="depoimentos-cards">
+                <div class="card card-depoimento">
+                  <img src="imagens/card-profile.webp" alt="" />
+                  <p class="card-texto">
+                    “Eu achava que terapia era só falar dos problemas. Mas aqui
+                    eu aprendi a entender por que eu reagia do jeito que
+                    reagia.”
+                  </p>
+                </div>
+                <div class="card card-depoimento">
+                  <img src="imagens/card-profile.webp" alt="" />
+                  <p class="card-texto">
+                    “Foi a primeira vez que eu senti que alguém realmente
+                    escutou o que eu estava tentando dizer.”
+                  </p>
+                </div>
+                <div class="card card-depoimento">
+                  <img src="imagens/card-profile.webp" alt="" />
+                  <p class="card-texto">
+                    “Eu cheguei me sentindo perdido. Hoje eu não tenho todas as
+                    respostas, mas tenho muito mais consciência.”
+                  </p>
+                </div>
+                <div class="card card-depoimento">
+                  <img src="imagens/card-profile.webp" alt="" />
+                  <p class="card-texto">
+                    “Eu achava que minha ansiedade era ‘frescura’. Descobri que
+                    era um sinal de que algo precisava de atenção.”
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            <div id="duvidas-frequentes" class="duvidas-frequentes">
+              <h2>dúvidas frequentes</h2>
+              <div class="duvidas-frequentes-cards-e-botao">
+                <div class="duvidas-frequentes-cards">
+                  <div class="card card-duvida">
+                    <p class="duvida">Terapia é só para quem está em crise?</p>
+                    <p class="resposta">
+                      Não. A terapia também é para quem quer se entender melhor,
+                      amadurecer emocionalmente e desenvolver autoconhecimento.
+                    </p>
+                  </div>
+                  <div class="card card-duvida">
+                    <p class="duvida">Quanto tempo dura o processo?</p>
+                    <p class="resposta">
+                      Depende da sua demanda. Cada processo é único e respeita
+                      seu ritmo.
+                    </p>
+                  </div>
+                  <div class="card card-duvida">
+                    <p class="duvida">Como funcionam as sessões?</p>
+                    <p class="resposta">
+                      As sessões têm duração média de 50 minutos, semanais,
+                      podendo ser online ou presenciais.
+                    </p>
+                  </div>
+                  <div class="card card-duvida">
+                    <p class="duvida">Você atende online?</p>
+                    <p class="resposta">
+                      Sim. O atendimento online segue os mesmos princípios
+                      éticos do presencial.
+                    </p>
+                  </div>
+                  <div class="card card-duvida">
+                    <p class="duvida">Como sei se preciso de terapia?</p>
+                    <p class="resposta">
+                      Se algo está te incomodando com frequência, já é motivo
+                      suficiente para buscar ajuda.
+                    </p>
+                  </div>
+                </div>
+
+                <!-- todo: link do whatsapp -->
+                <a href="" class="duvidas-frequentes-botao-whatsapp botao">
+                  <img
+                    src="imagens/logo-whatsapp.webp"
+                    alt="Logo do WhatsApp"
+                  />
+                  <p>Tire dúvidas no WhatsApp</p>
+                </a>
+              </div>
+            </div>
+          </section>
+        </div>
+
+        <!-- FOOTER ok, css ok -->
+        <div class="container-footer">
+          <footer>
+            <picture class="footer-bg">
+              <!-- todo: colocar a url do bg pra mobile -->
+              <source
+                media="(max-width: 600px)"
+                srcset="imagens/footer-bg-mobile"
+              />
+              <img src="imagens/footer-bg.webp" alt="" />
+            </picture>
+            <h2>onde me encontrar</h2>
+            <div class="footer-divs">
+              <div class="footer-div1">
+                <p>
+                  Se quiser me encontrar pessoalmente, meu consultório fica na
+                  rua Esperança, nº 123, São Paulo. Estarei te esperando de
+                  portas abertas! :)
+                </p>
+                <iframe
+                  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d15981.138173419651!2d2.27268317449207!3d48.855637014896175!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47e66e2964e34e2d%3A0x8ddca9ee380ef7e0!2sTorre%20Eiffel!5e1!3m2!1spt-BR!2sbr!4v1772558543768!5m2!1spt-BR!2sbr"
+                  width="600"
+                  height="450"
+                  style="border: 0"
+                  allowfullscreen=""
+                  loading="lazy"
+                  referrerpolicy="no-referrer-when-downgrade"
+                ></iframe>
+              </div>
+
+              <div class="footer-div2">
+                <div id="contato" class="redes">
+                  <p>Você também pode me encontrar na minhas redes sociais:</p>
+                  <div class="redes-botoes">
+                    <!-- todo: link whatsapp -->
+                    <a href="">
+                      <img
+                        src="imagens/logo-whatsapp.webp"
+                        alt="Logo do WhatsApp"
+                      />
+                      <p>WhatsApp</p>
+                    </a>
+
+                    <!-- todo: link instagram -->
+                    <a href="">
+                      <img
+                        src="imagens/logo-instagram.webp"
+                        alt="Logo do Instagram"
+                      />
+                      <p>Instagram</p>
+                    </a>
+                  </div>
+                </div>
+
+                <div class="palavras">
+                  <p class="palavras-psi">
+                    Tudo vai ficar bem! :)<br />
+                    Com amor, Ana Carolina!<br />
+                    CRP: 123456789
+                  </p>
+
+                  <p class="palavras-mths">
+                    Feito por
+                    <strong>mths-web</strong>
+                  </p>
+                </div>
+              </div>
+            </div>
+          </footer>
         </div>
       </div>
-    </section>
+    </div>
 
-    <!-- SECAO2 ok, css ok -->
-    <section class="secao2">
-      <div class="depoimentos-anonimos">
-        <div class="depoimentos-anonimos-textos">
-          <h2>depoimentos anônimos</h2>
-          <p class="texto-minusculo">
-            Todos os depoimentos foram publicados com autorização dos pacientes.
-            Para garantir confidencialidade e respeito ético, as identidades
-            foram preservadas.
-          </p>
-        </div>
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.14.1/dist/gsap.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.14.1/dist/ScrollTrigger.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.14.1/dist/ScrollSmoother.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.14.1/dist/ScrollToPlugin.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.14.1/dist/SplitText.min.js"></script>
 
-        <div class="depoimentos-cards">
-          <div class="card">
-            <img src="imagens/card-profile.webp" alt="" />
-            <p class="card-texto">
-              “Eu achava que terapia era só falar dos problemas. Mas aqui eu
-              aprendi a entender por que eu reagia do jeito que reagia.”
-            </p>
-          </div>
-          <div class="card">
-            <img src="imagens/card-profile.webp" alt="" />
-            <p class="card-texto">
-              “Foi a primeira vez que eu senti que alguém realmente escutou o
-              que eu estava tentando dizer.”
-            </p>
-          </div>
-          <div class="card">
-            <img src="imagens/card-profile.webp" alt="" />
-            <p class="card-texto">
-              “Eu cheguei me sentindo perdido. Hoje eu não tenho todas as
-              respostas, mas tenho muito mais consciência.”
-            </p>
-          </div>
-          <div class="card">
-            <img src="imagens/card-profile.webp" alt="" />
-            <p class="card-texto">
-              “Eu achava que minha ansiedade era ‘frescura’. Descobri que era um
-              sinal de que algo precisava de atenção.”
-            </p>
-          </div>
-        </div>
-      </div>
-
-      <div class="duvidas-frequentes">
-        <h2>dúvidas frequentes</h2>
-        <div class="duvidas-frequentes-cards-e-botao">
-          <div class="duvidas-frequentes-cards">
-            <div class="card">
-              <p class="duvida">Terapia é só para quem está em crise?</p>
-              <p class="resposta">
-                Não. A terapia também é para quem quer se entender melhor,
-                amadurecer emocionalmente e desenvolver autoconhecimento.
-              </p>
-            </div>
-            <div class="card">
-              <p class="duvida">Quanto tempo dura o processo?</p>
-              <p class="resposta">
-                Depende da sua demanda. Cada processo é único e respeita seu
-                ritmo.
-              </p>
-            </div>
-            <div class="card">
-              <p class="duvida">Como funcionam as sessões?</p>
-              <p class="resposta">
-                As sessões têm duração média de 50 minutos, semanais, podendo
-                ser online ou presenciais.
-              </p>
-            </div>
-            <div class="card">
-              <p class="duvida">Você atende online?</p>
-              <p class="resposta">
-                Sim. O atendimento online segue os mesmos princípios éticos do
-                presencial.
-              </p>
-            </div>
-            <div class="card">
-              <p class="duvida">Como sei se preciso de terapia?</p>
-              <p class="resposta">
-                Se algo está te incomodando com frequência, já é motivo
-                suficiente para buscar ajuda.
-              </p>
-            </div>
-          </div>
-
-          <!-- todo: link do whatsapp -->
-          <a href="" class="duvidas-frequentes-botao-whatsapp botao">
-            <img src="imagens/logo-whatsapp.webp" alt="Logo do WhatsApp" />
-            <p>Tire dúvidas no WhatsApp</p>
-          </a>
-        </div>
-      </div>
-    </section>
-
-    <!-- FOOTER ok -->
-    <footer>
-      <h2>onde me encontrar</h2>
-      <div class="footer-divs">
-        <div class="footer-div1">
-          <p>
-            Se quiser me encontrar pessoalmente, meu consultório fica na rua
-            Esperança, nº 123, São Paulo. Estarei te esperando de portas
-            abertas! :)
-          </p>
-          <iframe
-            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d15981.138173419651!2d2.27268317449207!3d48.855637014896175!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47e66e2964e34e2d%3A0x8ddca9ee380ef7e0!2sTorre%20Eiffel!5e1!3m2!1spt-BR!2sbr!4v1772558543768!5m2!1spt-BR!2sbr"
-            width="600"
-            height="450"
-            style="border: 0"
-            allowfullscreen=""
-            loading="lazy"
-            referrerpolicy="no-referrer-when-downgrade"
-          ></iframe>
-        </div>
-
-        <div class="footer-div2">
-          <div class="redes">
-            <p>Você também pode me encontrar na minhas redes sociais:</p>
-            <div class="redes-botoes">
-              <!-- todo: link whatsapp -->
-              <a href="">
-                <img src="imagens/logo-whatsapp.webp" alt="Logo do WhatsApp" />
-                <p>WhatsApp</p>
-              </a>
-
-              <!-- todo: link instagram -->
-              <a href="">
-                <img
-                  src="imagens/logo-instagram.webp"
-                  alt="Logo do Instagram"
-                />
-                <p>Instagram</p>
-              </a>
-            </div>
-          </div>
-
-          <div class="palavras">
-            <p class="palavras-psi">
-              Tudo vai ficar bem! :)<br />
-              Com amor, Ana Carolina!<br />
-              CRP: 123456789
-            </p>
-
-            <p class="palavras-mths">
-              Feito por
-              <strong>mths-web</strong>
-            </p>
-          </div>
-        </div>
-      </div>
-    </footer>
+    <script src="script.js"></script>
   </body>
 </html>
