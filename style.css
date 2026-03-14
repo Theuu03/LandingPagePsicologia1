@@ -318,6 +318,10 @@ header{
             ul{
                 list-style: none;
                 padding-left: 24px;
+
+                li{
+                    font-size: var(--font-size-corpo);
+                }
             }
 
             
@@ -378,7 +382,7 @@ header{
     }
 
     .depoimentos-anonimos{
-        width: 800px;
+        width: 60vw;
         margin: auto;
         display: flex;
         flex-direction: column;
@@ -622,21 +626,72 @@ footer{
 }
 
 /* MEDIA QUERIES */
+@media (max-width: 1250px){
+    /* SECAO2 ok */
+    .secao2{
+        .depoimentos-anonimos{
+            width: 100%;
+
+            .depoimentos-cards{
+                align-items: center;
+                flex-direction: column;
+                width: 100%;
+                
+                card{
+                    width: 100%;
+                }
+            }
+        }
+
+        .duvidas-frequentes{
+            width: 100%;
+
+            .duvidas-frequentes-cards-e-botao{
+                align-items: center;
+                .duvidas-frequentes-cards{
+                    width: 90%;
+                    align-items: center;
+                    flex-direction: column;
+
+                    .card{
+                        width: 100%;
+                    }
+                }
+            }
+        }
+    }
+}
+
 @media (max-width: 600px){
     :root{
         --font-size-minusculo: 12px;
 
+        --padding-lateral-adicional: 12px;
+
         --padding-link: 8px 0;
+    }
+
+    .botao{
+        gap: 12px;
+        padding: 0px 24px;
+
+        img{
+            height: 28px;
+        }
+
+        p{
+            font-size: 12px;
+        }
     }
 
     /* HEADER ok */
     header{
-        padding: 5vh;
+        padding: 4vh;
         flex-direction: column;
-        gap: 12px;
+        gap: 16px;
     }
 
-    /* HERO  */
+    /* HERO ok */
     .hero{
         padding: 0;
         picture{
@@ -688,4 +743,181 @@ footer{
             }
         }
     }
+
+    /* SECAO1 ok */
+    .secao1{
+        gap: 68px;
+
+        h2{
+            font-size: 48px;
+            line-height: 48px;
+        }
+
+        p{
+            font-size: 12px;
+        }
+
+        .talvez{
+            width: 90vw;
+
+            .talvez-textos{
+                width: 90vw;
+            }
+        }
+
+        .abordagem{
+            width: 90vw;
+
+            .abordagem-textos{
+                width: 90vw;
+
+                ul{
+                    padding-left: 12px;
+
+                    li{
+                        font-size: 12px;
+                    }
+                }
+            }
+        }
+    }
+
+    /* SECAO2 ok */
+    .secao2{
+        gap: 80px;
+
+        h2{
+            font-size: 48px;
+        }
+
+        picture{
+            img{
+                object-position: 50% 100%;
+            }
+        }
+
+        .depoimentos-anonimos{
+            width: 80vw;
+            gap: 40px;
+            
+            .depoimentos-anonimos-textos{
+                .texto-minusculo{
+                    font-size: 8px;
+                    width: 90%;
+                }
+            }
+
+            .depoimentos-cards{
+                .card{
+                    width: 100%;
+                    gap: 20px;
+                    padding: 20px 32px;
+
+                    p{
+                        font-size: 12px;
+                    }
+                }
+            }
+        }
+
+        .duvidas-frequentes{
+            width: 80vw;
+            gap: 28px;
+
+            .duvidas-frequentes-cards-e-botao{
+                .duvidas-frequentes-cards{
+                    gap: 12px;
+
+                    .card{
+                        width: 100%;
+                        gap: 4px;
+
+                        .duvida{
+                            font-size: 12px;
+                        }
+
+                        .resposta{
+                            font-size: 8px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    /* FOOTER ok */
+    footer{
+        width: 100vw;
+        padding-bottom: 20px;
+        align-items: center;
+
+        h2{
+            font-size: 48px;
+            line-height: 48px;
+        }
+
+        p{
+            font-size: 12px;
+        }
+
+        .footer-divs{
+            flex-direction: column;
+            align-items: center;
+            gap: 68px;
+
+            .footer-div1{
+                width: 85%;
+                align-items: center;
+
+                iframe{
+                    height: 60vh;
+                }
+
+                p{
+                    text-align: center;
+                }
+            }
+
+            .footer-div2{
+                width: 90%;
+                align-items: center;
+                gap: 52px;
+
+                .redes{
+                    align-items: center;
+                    gap: 24px;
+
+                    p{
+                        text-align: center;
+                    }
+
+                    .redes-botoes{
+                        width: 100%;
+                        align-items: center;
+                        justify-content: center;
+                        padding: auto;
+                        flex-direction: column;
+                        gap: 12px;
+
+                        a{
+                            gap: 12px;
+                            padding: 8px;
+
+                            img{
+                                height: 24px;
+                            }
+                        }
+                    }
+                }
+
+                .palavras{
+                    *{
+                        align-items: center;
+                        text-align: center;
+                    }
+                }
+            }
+        }
+    }
 }
+
